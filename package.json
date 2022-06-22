@@ -4,6 +4,7 @@
   "description": "This is a website for the fictional campsites review site Nucamp",
   "main": "index.html",
   "scripts": {
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
     "start": "npm run watch:all",
@@ -14,6 +15,7 @@
   "author": "Andreas D Abaidoo",
   "license": "ISC",
   "devDependencies": {
+    "copyfiles": "^2.2.0",
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",
     "onchange": "^7.0.0",
